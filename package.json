@@ -1,0 +1,56 @@
+{
+  "name": "@andreagrandi/pi-statusline",
+  "version": "0.1.0",
+  "description": "Claude-like statusline extension for Pi with compact context and provider usage chips.",
+  "type": "module",
+  "files": [
+    "*.ts",
+    "*.md",
+    "*.json",
+    "NOTICE.md",
+    "fixed-editor/**/*.ts",
+    "assets/**"
+  ],
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi",
+    "coding-agent",
+    "statusline",
+    "footer"
+  ],
+  "license": "MIT",
+  "author": "andreagrandi",
+  "homepage": "https://github.com/andreagrandi/pi-statusline#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreagrandi/pi-statusline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andreagrandi/pi-statusline/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  },
+  "dependencies": {
+    "@wierdbytes/pi-common": "^0.5.0",
+    "@wierdbytes/pi-events": "^0.1.0"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "^0.74.0",
+    "@earendil-works/pi-coding-agent": "^0.74.0",
+    "@earendil-works/pi-tui": "^0.74.0",
+    "@types/node": "^25.9.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  }
+}
